@@ -23,4 +23,8 @@ def send_line(message, file_path=None):
 
 
 if __name__ == "__main__":
-    main()
+    import time
+    for i in range(3):
+        time.sleep(5)
+        send_line(f"{i+1}回目！！の通知！！")
+        
